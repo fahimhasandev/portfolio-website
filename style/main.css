@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Body  */
 body {
   font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: bold;
 }
 
 /* Shred Styles */
@@ -21,6 +27,16 @@ body {
   padding: 18px 36px;
   border-radius: 5px;
   color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.btn-tranparent {
+  background: none;
+  border: 0;
+  padding: 18px 24px;
+  border: 1px solid #fd6e0a;
+  border-radius: 5px;
+  color: #fd6e0a;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -44,5 +60,42 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  font-size: ;
+  font-size: 1.2 rem;
+  color: #474747;
+}
+/* Header */
+.header {
+  background: url(../images/developer.png), url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+/* Banner Styles */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 0 230px;
+}
+
+.hero-content {
+  max-width: 580px;
+  max-height: 356px;
+}
+
+.hero .hero-greetings {
+  font-size: 45px;
+  font-weight: 600;
+}
+.hero .hero-title {
+  font-size: 85px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+}
+.banner-profile-image {
+  max-width: 584px;
+  max-height: 676px;
+  object-fit: contain;
 }
